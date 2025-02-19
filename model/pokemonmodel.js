@@ -1,21 +1,23 @@
 import mongoose from "mongoose";
-const userSchema = mongoose.Schema(
+const pokemonSchema = mongoose.Schema(
 
   {
     name: {
       type: String,
       required: true,
+
     },
-    email: {
+    image:{
+      
       type: String,
       required: true,
-      unique: true,
-    },
+    },  
+
   },
   {
     timestamps: true,
   }
 );
 
-const User = mongoose.model("User", userSchema);
-export default User;
+const Pokemon = mongoose.model("Pokemon", pokemonSchema);
+export default Pokemon

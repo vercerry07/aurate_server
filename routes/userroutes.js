@@ -1,8 +1,8 @@
 import express from "express";
 let router = express.Router();
 
-import { register } from "../controller/usercontroller.js";
-router.route("/register").post(register);
-
+import { addPokemon, getPokemon } from "../controller/usercontroller.js";
+router.route("/").post(addPokemon);
+router.route("/:name").get(getPokemon);
 
 export default router;
