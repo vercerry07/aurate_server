@@ -8,7 +8,6 @@ sample payload:-
 
 {
     "name":"pikachu",
-
     "image":"https://res.cloudinary.com/ddm2yqyjd/image/upload/v1739956063/pikachu_e3leew.jpg",
     "ability":"electric",
     "type":"electric",
